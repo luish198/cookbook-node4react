@@ -9,8 +9,6 @@ import recipesRouter from './routes/recipes.js';
 
 
 
-
-
 //const express = require('express');
 
 
@@ -21,7 +19,7 @@ app.use(cors());
 
 dotenv.config()
 
-const port = process.env.PORT || 5000
+//const port = process.env.PORT || 5000
 
 
 //const app = express();
@@ -49,4 +47,4 @@ app.get('/', (req, res)=>{
 })
 
 
-app.listen(process.env.PORT || 5000, ()=>{console.log("server running at ..."+port)});
+app.listen(process.env.PORT || 5000, ()=>{console.log("server running on the port")});
